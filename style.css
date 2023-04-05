@@ -221,3 +221,46 @@ section h5 {
 .job-description p {
   text-align: justify;
 }
+
+.studies {
+  cursor: default;
+}
+
+ul {
+  color: grey;
+}
+
+.idiomes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.idioma {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+progress {
+  appearance: none;
+  width: 12rem;
+  height: 10px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #eee;
+}
+
+progress::-webkit-progress-value {
+  background-color: #4772cf;
+}
+
+progress::-moz-progress-bar {
+  background-color: #4772cf;
+}
+
+#languages {
+  padding-bottom: 2rem;
+}
