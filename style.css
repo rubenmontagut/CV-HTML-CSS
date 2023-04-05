@@ -112,3 +112,112 @@ hr {
   align-items: center;
   gap: 0.5rem;
 }
+
+.other {
+  margin: 1.5rem 1.5rem 1.5rem -1rem;
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  overflow: auto;
+  gap: 1.5rem;
+}
+
+.other::-webkit-scrollbar {
+  width: 0;
+}
+
+.other section {
+  margin: 0;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 5px;
+  min-width: 40rem;
+}
+
+.other section h2 {
+  margin-top: 1rem;
+  position: relative;
+  color: #2b42b4;
+  font-variant: small-caps;
+  font-size: 2rem;
+}
+
+.other section h2::after {
+  content: "";
+  position: absolute;
+  top: 4rem;
+  width: 10ch;
+  left: 0;
+  border-bottom: 2px solid black;
+}
+
+.other details summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary,
+.studies {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 8px;
+}
+summary {
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+summary:hover {
+  background-color: lightgray;
+}
+
+details,
+.studies {
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+details[open] {
+  position: relative;
+}
+
+details[open] summary:hover {
+  background-color: white;
+}
+
+details[open] summary::after {
+  content: "";
+  border: 1px solid #233969;
+  position: absolute;
+  top: 5.5rem;
+  width: 5ch;
+  left: 1.6rem;
+}
+
+section h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+section h4 {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #4772cf;
+}
+
+section h5 {
+  color: #6c778d;
+}
+
+.job-description {
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.job-description p {
+  text-align: justify;
+}
